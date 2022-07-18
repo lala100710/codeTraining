@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-8 input</title>
+</head>
+<body>
+    <!-- for 當點data :時跑到 id為txtData的element (label連接到input) -->
+    <label for="txtData">Data :</label>
+   <input id="txtData" type="text"/>
+    &nbsp;<input type="button" value="ok"/>
+    <hr/>
+    <select>
+        <option>option-1</option>
+        <option>option-2</option>
+        <option>option-3</option>
+    </select>
+    <hr />
+    <!-- radio button 將Name設一樣視為一組 -->
+    
+    <input type="radio" id="rodoType1" name="r1" />
+    <label for="rodoType1">type-I</label>
+    <input type="radio" id="rodoType2"name="r1" />
+    <label for="rodoType2">type-II</label>
+    <input type="radio" id="rodoType3"name="r1" />
+    <label for="rodoType3">type-III</label>
+    <hr />
+    <input type="checkbox" id="chkType1" />
+    <label for="chkType1">type-I</label>
+    <input type="checkbox" id="chkType2" />
+    <label for="chkType2">type-II</label>
+    <input type="checkbox"  id="chkType3"/>
+    <label for="chkType3">type-III</label>
+    <hr />
+    Date :<input type="date"/>
+    <hr />
+    Time : <input type="time"/> 
+    <hr />
+    Date-Time : <input type="datetime-local"/>
+    <hr />
+    Number :<input type="number" min="0"max="10"/>
+    <hr />
+    <input type="range"/>
+    <hr />
+    Color : <input type="color"/>
+</body>
+</html>
