@@ -1,0 +1,64 @@
+<!-- // css cascade 重疊 style sheet 頁 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  */
+        div{
+            width: 600px;height:240px; 
+            border:2px solid green;
+            font-family: Verdana;
+            font-size: 16px;
+            padding: 10px;
+            margin: 5px;
+           
+        }
+        /* # 是id / .是class */
+        /* id 不能重複，class 可以 */
+        span{
+            border:dashed 2px black;
+           
+        }
+        #d1{
+            color: bisque;
+            background-color: cadetblue;
+        }
+        #d2{
+            color: rgb(141, 149, 59);
+            background-color: rgb(114, 177, 211);
+        }
+        .m1{
+            background-color:darkcyan;
+        }
+        .m2{
+            color: rgb(163, 62, 150);
+            background-color:rgb(40, 179, 189);
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="d1" >
+        <span class="m1">Animals</span> are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, <span class="m1" >animals</span> 
+        consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an ontogenetic 
+        stage in which their body consists of a hollow sphere of cells,the blastula, during embryonic development. Over 1.5 million
+         living animal species have been described—of which around 1 million are insects—but it has been estimated there are over 
+         7 million animal species in total. <span class="m1" >animals</span> range in lengthfrom 8.5 micrometres (0.00033 in) to 33.6 metres (110 ft).  
+         They have complex interactions with each other and their environments, forming intricate food webs. The scientific study
+          of <span class="m1" >animals</span> is known as zoology.
+    </div>
+    <div id="d2">
+        <span class="m2">Animals</span> are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, <span class="m2" >animals</span> 
+        consume organic material, breathe oxygen, are able to move, can reproduce sexually, and go through an ontogenetic 
+        stage in which their body consists of a hollow sphere of cells,the blastula, during embryonic development. Over 1.5 million
+         living animal species have been described—of which around 1 million are insects—but it has been estimated there are over 
+         7 million animal species in total. <span class="m2">animals</span> range in lengthfrom 8.5 micrometres (0.00033 in) to 33.6 metres (110 ft).  
+         They have complex interactions with each other and their environments, forming intricate food webs. The scientific study
+          of <span class="m2" >animals</span> is known as zoology.
+    </div>
+</body>
+</html>

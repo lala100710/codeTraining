@@ -1,0 +1,33 @@
+
+/*  */
+div{
+    width: 600px;height:240px; 
+    border:2px solid green;
+    font-family: Verdana;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+   
+}
+/* # 是id / .是class */
+/* id 不能重複，class 可以 */
+span{
+    border:dashed 2px black;
+   
+}
+#d1{
+    color: bisque;
+    background-color: cadetblue;
+}
+#d2{
+    color: rgb(141, 149, 59);
+    background-color: rgb(114, 177, 211);
+}
+.m1{
+    background-color:darkcyan;
+}
+.m2{
+    color: rgb(163, 62, 150);
+    background-color:rgb(40, 179, 189);
+}
+
