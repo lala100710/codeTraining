@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnOk_Click(){
+            var n=parseInt(document.getElementById("txtN").value);
+            var d1=document.getElementById("div1");
+            d1.innerHTML="";
+            for(var i=0;i<=n;i++){
+                for(var j=1;j<=i;j++)
+                    d1.innerHTML+="*";
+                 d1.innerHTML+="<br />";
+            }
+        }
+    </script>
+</head>
+<body>
+    N :<input id="txtN"/>
+    <input type="button"value="ok" onclick="btnOk_Click()"/>
+    <hr/>
+    <div id="div1"></div>
+</body>
+</html>

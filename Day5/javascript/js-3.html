@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btAdd_Click(){
+            var a=parseFloat(document.getElementById("txtA").value);
+            var b=parseFloat(document.getElementById("txtB").value);
+            document.getElementById("txtAns").value=(a+b).toFixed(4);
+        }
+        function btSub_Onclick(){
+            var a=parseFloat(document.getElementById("txtA").value);
+            var b=parseFloat(document.getElementById("txtB").value);
+            document.getElementById("txtAns").value=(a-b).toFixed(4);
+        }
+        function btMuti_Onclick(){
+            var a=parseFloat(document.getElementById("txtA").value);
+            var b=parseFloat(document.getElementById("txtB").value);
+            document.getElementById("txtAns").value=(a*b).toFixed(4);
+        }
+        function btDivi_Onclick(){
+            var a=parseFloat(document.getElementById("txtA").value);
+            var b=parseFloat(document.getElementById("txtB").value);
+            document.getElementById("txtAns").value=(a/b).toFixed(4);
+        }
+    </script>
+    <style>
+        .label-field{
+           display: inline-block;   
+           width: 50px;       
+        }
+    </style>
+</head>
+<body>
+    <div style="padding: 20px;width: 250px; height:140px; border:solid 2px black ;">
+        <label class="label-field">A=</label>
+        <input id="txtA"/><br /><br />
+        <label class=label-field>B=</label>
+        <input id="txtB"/><br /><br />
+        <label class=label-field>Ans=</label>
+        <input id="txtAns"/><br /><br />
+        <input type="button"value="+"style="margin-left:50px;"onclick="btAdd_Click()"/>
+        <input type="button"value="-" onclick="btSub_Onclick()"/>
+        <input type="button"value="*" onclick="btMuti_Onclick()"/>
+        <input type="button"value="/" onclick="btDivi_Onclick()"/>
+    </div>
+</body>
+</html>

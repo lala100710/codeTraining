@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change money js</title>
+    <script>
+        function btChange(){
+            var nt=parseInt(document.getElementById("txtNT").value,10);
+            var curr=parseFloat(document.getElementById("selCurr").value);
+            document.getElementById("txtAmout").value=nt/curr;
+        }
+    </script>
+    <style>
+        .label-field{
+            display:inline-block;
+            width: 100px;
+        }
+        .d1{
+            width: 350px;
+            padding: 20px;
+            border: 2px black solid;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <label class="label-field">NT</label>
+    <input id="txtNT"/><br/><br/>
+    <label class="label-field">幣別 </label>
+    <select id="selCurr">
+        <option value="30.05">美元</option>
+        <option value="0.2785">日圓</option>
+        <option value="32.55">歐元</option>
+    </select><br/><br/>
+    <label class="label-field">可兌換金額 </label>
+    <input id="txtAmout"/><br /><br />
+    <input type="button" value="兌換" onclick="btChange()"/>
+    </div>
+    
+</body>
+</html>

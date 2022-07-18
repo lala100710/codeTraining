@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>score js</title>
+    <style>
+        .d1{
+            width: 250px;
+            padding: 20px;
+            border: 2px black solid;
+        }
+        .label-field{
+           display: inline-block;   
+           width: 50px;       
+        }
+        #btnCal{
+            margin-left: 100px;
+        }
+    </style>
+    <script>
+        function btCal_Click(){
+            var txt=document.getElementById("txtResult");
+            var score=parseInt(document.getElementById("txtScore").value,10);
+            if(isNaN(score)){
+                txt.value="必須輸入整數";
+                txt.style.color="black";
+                txt.style.backgroundColor="red";
+            }else if(score<60){
+                txt.value="不及格";
+                txt.style.color="red";
+                txt.style.backgroundColor="yellow";
+            }else{
+                txt.value="及格";
+                txt.style.color="white";
+                txt.style.backgroundColor="blue";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="d1">
+        <label class="label-field">成績 :</label>
+         <input id="txtScore"/><br/><br/>
+         <label class="label-field"> 結果 :</label>
+       <input id="txtResult"/><br/><br/>
+        <input id="btnCal" type="button" value="計算"onclick="btCal_Click()"/>
+    </div>
+   
+</body>
+</html>
