@@ -1,0 +1,1 @@
+C:\Users\USER\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.3.v20220515-1416\jre\bin\javaw.exe -Dfile.encoding=UTF-8 -classpath "C:\data\version control\Day5\JavaPractice\bin" -XX:+ShowCodeDetailsInExceptionMessages practice
