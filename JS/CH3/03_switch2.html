@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s=prompt("enter 1~7:",7);
+        var msg="今天是";
+        switch(s){
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+            case "5":
+                msg+="上班日";
+                break;
+            case "6":
+            case "7":  
+                msg+= "放假";
+                break; 
+            case null:
+                msg+="";
+                break;      
+            default:
+                msg = "輸入錯誤";
+        }
+        if(msg){
+            alert(msg);
+        }
+    </script>
+</body>
+</html>
